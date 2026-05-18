@@ -347,7 +347,7 @@ Un fichier FXML, c'est trois zones :
   </padding>
 
   <Label text="Bonjour"                          <!-- propriétés = attributs XML         -->
-         style="-fx-font-size: 20px;"/>          <!-- style CSS inline accepté           -->
+          style="-fx-font-size: 20px;"/>          <!--style CSS inline accepté           -->
 
   <Label text="ligne 2" wrapText="true"/>        <!-- les enfants vivent dans le contenu -->
 </VBox>
