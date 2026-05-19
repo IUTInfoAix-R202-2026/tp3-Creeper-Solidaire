@@ -2,6 +2,7 @@ package fr.univ_amu.iut.exercice4;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.stage.Stage;
 
 /**
  * Contrôleur de la vue {@code CoquilleAccueilView.fxml}.
