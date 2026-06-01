@@ -2,27 +2,12 @@ package fr.univ_amu.iut.exercice4;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.stage.Stage;
 
-/**
- * Contrôleur de la vue {@code CoquilleAccueilView.fxml}.
- *
- * <p>Concepts mis en pratique :
- *
- * <ul>
- *   <li>injection de {@link Label} via {@code @FXML} (titre central + statut en bas de fenêtre)
- *   <li>plusieurs handlers reliés au FXML par {@code onAction="#..."} sur les items d'un {@code
- *       MenuBar}
- *   <li>séparation propre : la <b>structure</b> (BorderPane + MenuBar + center + bottom) est dans
- *       le FXML, la <b>logique</b> (changement d'écran) est dans le contrôleur
- * </ul>
- *
- * <p>Aucun écran réel n'est implémenté ici : on se contente d'afficher le nom de la rubrique au
- * centre et de tracer le dernier clic dans la barre de statut. C'est suffisant pour vérifier que la
- * navigation principale fonctionne, sans détourner l'exercice de son objectif (FXML déclaratif).
- */
 public class CoquilleAccueilController {
 
   @FXML private Label labelTitre;
+
   @FXML private Label labelStatut;
 
   @FXML
@@ -52,6 +37,6 @@ public class CoquilleAccueilController {
   @FXML
   private void onQuitter() {
     Stage stage = (Stage) labelTitre.getScene().getWindow();
-    stage.close();
+    stage.hide();
   }
 }
